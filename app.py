@@ -8,8 +8,6 @@ st.set_page_config(page_title="SA Racing Wizard", layout="wide")
 st.title("South African Horseracing Prediction Engine")
 st.caption("Upload any Race Coast / Computerform PDF to generate Value Picks, Dark Horses, and Exotic Bet Builders.")
 
-uploaded_pdf = st.file_uploader("Upload South African Race Coast / Computerform PDF", type=["pdf"])
-
 c1, c2, c3, c4, c5 = st.columns(5)
 w_speed = c1.slider("Speed & Weight", 0.0, 1.0, 0.35, 0.05)
 w_class = c2.slider("Class & MR Drop", 0.0, 1.0, 0.25, 0.05)
