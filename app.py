@@ -15,7 +15,7 @@ w_form = c3.slider("Form & Fitness", 0.0, 1.0, 0.20, 0.05)
 w_draw = c4.slider("Draw Bias", 0.0, 1.0, 0.10, 0.05)
 w_gear = c5.slider("Gear Upgrades", 0.0, 1.0, 0.10, 0.05)
 
-
+uploaded_pdf = st.file_uploader("Upload South African Race Coast / Computerform PDF", type=["pdf"])
 @st.cache_data(show_spinner=False)
 def parse_sa_pdf_bytes(file_bytes):
     import io
